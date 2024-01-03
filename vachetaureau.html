@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vache-Taureau Game</title>
+  <link rel="stylesheet" href="vachetaureau.css">
+</head>
+<body>
+  <div id="game-container">
+    <div class="overlay">
+      <img src="./Feature-graphic_en.png" alt="Game Image" class="game-image">
+      <button id="play-button" onclick="startGame()">Play</button>
+    </div>
+  </div>
+  <div id="game-content" class="hidden">
+    <img src="./maxresdefault.jpg" alt="Top Image" id="top-image">
+    <h1>Vache-Taureau Game</h1>
+    <button onclick="generateRandomNumber()">Generate Random Number</button>
+    <p id="randomNumberMessage"></p>
+    <p>Guess the three-digit number:</p>
+    <input type="text" id="guessInput" maxlength="3" disabled>
+    <button id="submitGuess" onclick="checkGuess()" disabled>Submit Guess</button>
+    <p id="feedback"></p>
+  </div>
+  <script src="vachetaureau.js"></script>
+</body>
+</html>

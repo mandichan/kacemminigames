@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Guess Game</title>
+    <script src="guess.js"></script>
+    <link rel="stylesheet" href="guess.css">
+</head>
+<body>
+    <h1>The Guess Game</h1>
+
+    <div class="game-container">
+        <h2>Please click this button to generate a random number between 1 and 100</h2>
+        <button onclick="generateRandomNumber()">Get a number</button>
+        <div id="randomNumberMessage"></div>
+
+        <h2>Type a number to compare the generated one</h2>
+        <input type="number" id="userInput">
+        <button onclick="compareNumbers()">Compare</button>
+
+        <h2>Counts: <span id="count">1</span></h2>
+    </div>
+
+    <div class="result-container">
+        <p id="resultMessage">The number is smaller</p>
+    </div>
+
+    <div class="footer">
+        <p class="footer-text">Game provided by KACEM Aziz</p>
+    </div>
+</body>
+</html>

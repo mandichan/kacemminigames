@@ -1,0 +1,139 @@
+    body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        background-color: rgb(194, 163, 223);
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        background-color: #6aafe6;
+        color: #fff;
+        padding: 5px;
+    }
+
+    .left-image,
+    .right-image {
+        height: 50px; /* Adjust the height as needed */
+        width: auto;
+        margin-right: 10px; /* Add margin to separate the images from the content */
+    }
+
+    .logo-container {
+        display: flex;
+        align-items: center;
+    }
+
+    header img {
+        height: 100px;
+        width: 160px;
+    }
+
+    .logo-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 10px;
+    }
+
+    .landing-page {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        text-align: center;
+        
+
+    
+    }
+    h2 {
+        font-size: 2em;
+        margin-bottom: 20px; 
+    }
+    h1 {
+        font-size: 2em;
+        margin-bottom: 5px;
+        
+    }
+    h4{
+        margin-bottom: 60px;
+    }
+
+    .game-previews {
+        display: flex;
+        flex-direction: row; /* Set the direction to row */
+        justify-content: center;
+    }
+
+    .game-preview {
+        margin: 20px;
+        cursor: pointer;
+        text-align: center;
+    }
+
+    img {
+        width: 100%;
+        max-width: 300px; 
+        height: auto;
+        border-radius: 8px;
+    }
+
+    span {
+        display: block;
+        margin-top: 10px;
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+
+    footer {
+        height: 50px;
+        background-color: #6aafe6;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+    }
+
+    .header-text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-text {
+        display: flex;
+        align-items: center;
+    }
+
+    header {
+        background-color: #6aafe6;
+        color: #fff;
+        padding: 5px;
+        display: flex;
+        justify-content: space-between; /* Changed this to space-between */
+        align-items: center;
+    }
+    .game-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 300px;
+        padding: 20px;
+        background-color: #f0a9ec;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: box-shadow 0.4s ease-in-out;
+        margin: 0 30px 30px;
+        cursor: pointer; /* Set cursor to hand */
+    }
+    
+    .game-box:hover {
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+    .game-box img {
+        width: 100%;
+        max-width: 250px; 
+        height: auto;
+        border-radius: 8px;
+    }

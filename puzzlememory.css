@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    position: relative;
+}
+
+#first-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.game-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#play-button {
+    margin-top: 20px;
+    padding: 15px;
+    font-size: 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 47%;
+    left: calc(50%);
+    transform: translate(-50%, -50%);
+}
+
+#play-button:hover {
+    background-color: #2980b9;
+}
+
+#memory-game-container {
+    display: none;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(214, 255, 138);
+}
+
+#second-page-title {
+    font-size: 46px;
+    color: #8628c5;
+    margin-top: 20px;
+}
+
+.memory-game {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    cursor: pointer;
+    user-select: none;
+    overflow: hidden;
+}
+
+.card .hidden img {
+    width: 100%;
+    height: 100%;
+    visibility: hidden; /* Hide the images initially */
+}
+
+.card.flipped .hidden img {
+    visibility: visible; /* Show the images when flipped */
+}
+
+.card.flipped.matched .hidden {
+    background-color: #2ecc71;
+    transition: opacity 0.5s ease 0.5s;
+    opacity: 0;
+}
+
+.card.matched {
+    visibility: hidden;
+}
